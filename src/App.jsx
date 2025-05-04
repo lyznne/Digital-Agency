@@ -1,33 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import 'react-toastify/dist/ReactToastify.css';
+import 'react-modal-video/css/modal-video.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import '@fortawesome/fontawesome-free/css/all.css';
+import 'swiper/css/bundle';
+import 'aos/dist/aos.css';
+import '../src/assets/css/elegant-icons.css';
+import '../src/assets/css/flaticon-set.css';
+import 'react-circular-progressbar/dist/styles.css';
 
+import '../src/assets/css/validnavs.css';
+import '../src/assets/css/unit-test.css';
+import '../src/assets/css/spacing.css'
+import '../src/assets/css/style.css'
+
+import Routers from './Routers';
+import ScrollUpBtn from './components/others/ScrollUpBtn';
+import Preloader from './components/others/Preloader';
+import { ToastContainer } from 'react-toastify';
+// import { Helmet } from 'react-helmet';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async'
 function App() {
-  const [count, setCount] = useState(0)
+
+  //  Preloader
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 1200)
+  }, [])
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {isLoading ? <Preloader /> :
+        <div>
+          <Helmet>
+            <title>Dilabs Creative Digital Agency App</title>
+            <link rel="shortcut icon" href="/img/others/favicon.ico"></link>
+          </Helmet>
+          <Routers />
+          <ScrollUpBtn />
+          <ToastContainer />
+        </div>
+      }
     </>
   )
 }
