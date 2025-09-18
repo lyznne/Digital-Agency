@@ -22,7 +22,7 @@ const Footer = () => {
                                     <img src="/img/shape/6.png" alt="Image Not Found" />
                                 </div>
                                 <div className="f-item about pr-50 pr-xs-0 pr-md-0">
-                                    <img className="logo" src="/img/logo/logo-light.png" alt="Logo" />
+                                    <img className="logo" src="/img/logo/logo-new.png" alt="Logo" />
                                     <p>
                                         Are off under folly death writter transforming cold regular. Almost do am or limits of hearts.
                                     </p>
@@ -67,7 +67,7 @@ const Footer = () => {
                                         <li>
                                             <div className="content">
                                                 <strong>Address:</strong>
-                                                5919 Trussville Crossings Pkwy, Birmingham
+                                                5919 2ND Street Right Ville ENM, Nairobi
                                             </div>
                                         </li>
                                         <li>

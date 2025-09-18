@@ -1,4 +1,3 @@
-import React from 'react';
 import SocialShare2 from '../others/SocialShare2';
 import { HashLink as Link } from 'react-router-hash-link'
 import { toast } from 'react-toastify';
@@ -31,7 +30,7 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses, searchOpe
                     <Link to={void (0)} className="close-side" onClick={removeClasses}><i className="icon_close"></i></Link>
                     <div className="widget">
                         <div className="logo">
-                            <img src="/img/logo/logo-light.png" alt="Logo" />
+                            <img src="/img/logo/logo-new.png" alt="Logo" />
                         </div>
                     </div>
                     <div className="widget">
@@ -45,7 +44,7 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses, searchOpe
                                 <li>
                                     <div className="content">
                                         <p>Address</p>
-                                        <strong>California, TX 70240</strong>
+                                        <strong>Nairobi, STR 70240</strong>
                                     </div>
                                 </li>
                                 <li>

@@ -22,7 +22,7 @@ const ContactInfo = () => {
                         <div className="info">
                             <h4 className="title">Location</h4>
                             <p>
-                                55 Main Street, The Grand Avenue 2nd Block, New York City
+                                55 Main Street, The Grand Avenue 2nd Block, Nairobi
                             </p>
                         </div>
                     </li>

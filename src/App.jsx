@@ -38,7 +38,7 @@ function App() {
       {isLoading ? <Preloader /> :
         <div>
           <Helmet>
-            <title>Dilabs Creative Digital Agency App</title>
+            <title>creative Creative Digital Agency App</title>
             <link rel="shortcut icon" href="/img/others/favicon.ico"></link>
           </Helmet>
           <Routers />
